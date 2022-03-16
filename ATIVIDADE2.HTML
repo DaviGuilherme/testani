@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2</title>
+</head>
+
+<body>
+    <h2>Calculadora de aposentadoria.</h2><br>
+    <h4>Digite sua <u>idade</u>, por favor:</h4><br>
+    <input id="idade" type="text" placeholder="Aqui vai sua idade">
+    <button onclick="mulher()" style="color: violet;background-color: black;">Aposentadoria mulher</button>
+    <button onclick="homem()" style="color: blue;background-color: cyan;">Aposentadoria homem</button><br>
+
+
+    <span id="mulherr" style="color: blueviolet;"> </span>
+    <span id="homemm" style="color: rgb(30, 130, 10);"> </span>
+
+</body>
+
+</html>
+
+<script>
+    function mulher() {
+        mulherr.innerHTML = (`Se for mulher, faltam ${idade.value - (60)} p/ aposentar.<br>`)
+    }
+    function homem() {
+        homemm.innerHTML = (`Se for homem, faltam ${idade.value - (70)} p/ aposentar.<br>`)
+    }
+</script>

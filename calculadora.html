@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora Financeira</title>
+</head>
+<body>
+    <h2> Calculadora com foco no consumo de energia</h2>
+    <br>
+
+Para sabermos o consumo de energia de uma lâmpada, precisamos de 3 informações:
+<br>
+- Potência<br>
+- Quantidade de horas que a lâmpada esteve ligada<br>
+- Dias em que a lâmpada ficou ligada<br>
+<br>
+
+    Entre com a quantidade de lâmpadas:
+    <input id="qtdLampada" type="text" placeholder="Entre com a quantidade">
+    <br>
+
+    Entre potência da lâmpada:
+    <input id="potencia" type="text" placeholder="Entre com a potencia">
+    
+    <br>
+
+    Entre com o número de horas que a lâmpada ficou ligada:
+    <input id="horas" type="text" placeholder="Entre com as horas">
+    
+    <br>
+
+    Entre com a quantidade de dias que a lâmpada ficou ligada:
+    <input id="dias" type="text" placeholder="Entre com os dias">
+    <br>
+
+    <button onclick="calcular()">calcular</button>
+    <br>
+
+    
+    <br>
+    <div id="div_k" style="color: gold;background-color: red;width: 550px;">
+
+    </div>
+
+
+</body>
+</html>
+<script>
+    function calcular() {
+        div_k.innerHTML = `<b style="color: gold;background-color: red;width: 300px;">seu consumo é de</b> ${((potencia.value * horas.value * dias.value) / 1000) * qtdLampada.value} <b style="color: gold;background-color: red;width: 300px;">KWh, no mês</b>. 
+        Isso da em dinheiro: ${(((potencia.value * horas.value * dias.value) / 1000) * qtdLampada.value) * 0.181 } reais ao mês (considerando que a taxa de KWh seja R$ 0,181).`
+    }
+    
+</script>

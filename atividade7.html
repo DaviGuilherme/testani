@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 7</title>
+</head>
+
+<body>
+    <H3>Calculadora de Médias da SPTECH</H3> <BR>
+
+    Digite sua nota semestral:
+    <input id="semestral" type="text" placeholder="Nota semestral"><br>
+    Digite sua nota continuada:
+    <input id="continuada" type="text" placeholder="Nota continuada"><br>
+    Digite seu nome:
+    <input id="nome" type="text" placeholder="Seu nome"><br>
+
+    <button onclick="calcular()">Calcular Média</button><br><br>
+
+    <span id="resultado"></span>
+</body>
+
+</html>
+<script>
+    function calcular() {
+        resultado.innerHTML = `A Média de ${nome.value} será de ${Number(continuada.value * 0.4) + Number(semestral.value * 0.6)}`
+    }
+</script>

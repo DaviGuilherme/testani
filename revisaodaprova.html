@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cidadania</title>
+</head>
+<body>
+    <button onclick="moto()">moto</button>
+    <button onclick="carro()">carro</button>
+    <button onclick="bike()">bike</button>
+
+
+
+    <div id="div_k">
+
+    </div>
+<img id="imagem" style="height: 150px;">
+
+</body>
+</html>
+
+<script>
+    function moto() {
+        div_k.innerHTML = 'Motos são mais velozes, porem mais perigosas';
+        imagem.src = 'https://www.honda.com.br/motos/sites/hda/files/styles/product_860x550/public/2021-07/EixosMotos.psd_0000s_0000s_0001_CG-Fan-Azul-Perolizado.png?itok=4kXre_aQ';
+    }
+    function carro() {
+        div_k.innerHTML = 'Carros são mais rapidos, porem mais caros';
+        imagem.src = 'https://revistacarro.com.br/wp-content/uploads/2021/06/Fiat-Pulse_1.jpg';
+    }
+    function bike() {
+        div_k.innerHTML = 'Bikes são mais saudaveis, porem muito cansativas';
+        imagem.src = 'https://a-static.mlcdn.com.br/1500x1500/bicicleta-aro-29-mountain-bike-south-bike-legend-freio-a-disco-21-marchas/magazineluiza/225448200/b62657cc0c8b59162fd0cb1b8ee09bca.jpg';
+    }
+</script>

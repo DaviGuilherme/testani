@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 11</title>
+</head>
+
+<body>
+    <h2 style="color: red;">Vamos calcular o IMC?</h2>
+    <BR>
+    Digite seu <I> Peso </I>(Kg):
+    <input id="peso" type="text" placeholder="Digite aqui seu peso"><br>
+    Digite sua altura em <I>centimetros</I> :
+    <input id="altura" type="text" placeholder="Digite aqui sua altura"><br>
+    <button onclick="imc_h()" style="width: 100px;">IMC Homem</button>
+    <button onclick="imc_m()" style="width: 100px;">IMC Mulher</button>
+
+    <br><br>
+
+
+    <br>
+    <div id="div_k">
+        <br>
+    </div>
+
+</body>
+
+</html>
+<script>
+    function imc_h() {
+        div_k.innerHTML += `seu IMC (homem) é ${peso.value / (altura.value * altura.value)}<br>`
+    }
+    function imc_m() {
+        div_k.innerHTML += `seu IMC (mulher) é ${(peso.value / (altura.value * altura.value)) * 0.9}<br>`
+    }
+
+</script>
